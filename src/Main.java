@@ -19,16 +19,22 @@ public class Main {
                     4) Real brasileño => Dólar
                     5) Dólar = Peso colombiano
                     6) Peso colombiano => Dólar
-                    7) salir
+                    7) Peso mexicano = Dólar
+                    8) Dólar => Peso mexicano
+                    9) salir
 
                     Elija una opcion válida:
                     ************************************
                     """;
             System.out.println(texto);
             opcion = lectura.nextInt();
-
-            System.out.println("Ingrese el valor que desee convertir: ");
-            cantidadConvertir = lectura.nextDouble();
+            
+            if (opcion == 9){
+                break;
+            }else{
+                System.out.println("Ingrese el valor que desee convertir: ");
+                cantidadConvertir = lectura.nextDouble();
+            }
 
             switch (opcion) {
                 case 1:
@@ -81,15 +87,26 @@ public class Main {
                     break;
                 case 7:
                 try{
-                    Moneda resultado = consulta.buscaMoneda("USD");
-                    System.out.println(resultado.formatoConversion(cantidadConvertir, "ARS")); 
+                    Moneda resultado = consulta.buscaMoneda("MXN");
+                    System.out.println(resultado.formatoConversion(cantidadConvertir, "USD")); 
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
                     break;
+                case 8:
+                try{
+                    Moneda resultado = consulta.buscaMoneda("USD");
+                    System.out.println(resultado.formatoConversion(cantidadConvertir, "MXN")); 
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+                    break;
+                case 9:
+                
+                break;
             }
 
-        } while (opcion != 7 );
+        } while (opcion != 9 );
         
         lectura.close();
     }
