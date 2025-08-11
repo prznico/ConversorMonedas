@@ -41,8 +41,8 @@ public class Main {
                     break;
                 case 2:
                 try{
-                    Moneda resultado = consulta.buscaMoneda("USD");
-                    System.out.println(resultado.formatoConversion(cantidadConvertir, "ARS")); 
+                    Moneda resultado = consulta.buscaMoneda("ARS");
+                    System.out.println(resultado.formatoConversion(cantidadConvertir, "USD")); 
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
@@ -50,15 +50,15 @@ public class Main {
                 case 3:
                 try{
                     Moneda resultado = consulta.buscaMoneda("USD");
-                    System.out.println(resultado.formatoConversion(cantidadConvertir, "ARS")); 
+                    System.out.println(resultado.formatoConversion(cantidadConvertir, "BRL")); 
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
                     break;
                 case 4:
                 try{
-                    Moneda resultado = consulta.buscaMoneda("USD");
-                    System.out.println(resultado.formatoConversion(cantidadConvertir, "ARS")); 
+                    Moneda resultado = consulta.buscaMoneda("BRL");
+                    System.out.println(resultado.formatoConversion(cantidadConvertir, "USD")); 
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
@@ -66,15 +66,15 @@ public class Main {
                 case 5:
                 try{
                     Moneda resultado = consulta.buscaMoneda("USD");
-                    System.out.println(resultado.formatoConversion(cantidadConvertir, "ARS")); 
+                    System.out.println(resultado.formatoConversion(cantidadConvertir, "COP")); 
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
                     break;
                 case 6:
                 try{
-                    Moneda resultado = consulta.buscaMoneda("USD");
-                    System.out.println(resultado.formatoConversion(cantidadConvertir, "ARS")); 
+                    Moneda resultado = consulta.buscaMoneda("COP");
+                    System.out.println(resultado.formatoConversion(cantidadConvertir, "USD")); 
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
