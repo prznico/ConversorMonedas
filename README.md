@@ -1,6 +1,6 @@
 # ConversorMonedas
 
-# 💰 Conversor de Monedas Alura
+# 💰 Conversor de Monedas 
 
 El conversor de monedas preciso y haciendo uso de API, desarrollado como parte del programa ONE de Oracle G8 + Alura. 
 
